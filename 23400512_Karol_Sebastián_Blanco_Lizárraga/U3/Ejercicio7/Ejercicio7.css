@@ -1,0 +1,366 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #040714;
+    font-family: 'Roboto', sans-serif;
+    display: flex;
+    flex-direction: column;
+    color: white;
+    overflow-x: hidden;
+}
+
+.contenedor-global {
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 60px 20px;
+    text-align: center;
+}
+
+.contenedor-global h2 {
+    font-size: 36px;
+    margin-bottom: 10px;
+}
+
+.contenedor-global .subtitulo {
+    font-size: 16px;
+    color: #a2a6b0;
+    margin-bottom: 40px;
+}
+
+/* --- SECCIÓN 1 --- */
+.encabezado {
+    background: #333 url('assets/main-hero-background.png') no-repeat center / cover;
+    width: 100%; 
+    min-height: 100vh; 
+    display: flex;
+    flex-direction: column;
+    padding: 20px 60px;
+}
+
+.div-sesion {
+    display: flex;
+    justify-content: flex-end;
+    width: 100%;
+}
+
+.btn-sesion {
+    border-radius: 4px;
+    color: white;
+    background-color: rgba(0, 0, 0, 0.7);
+    border: solid 1px white;
+    width: 140px;
+    height: 40px;
+    font-weight: bold;
+    cursor: pointer;
+    font-size: 13px;
+    letter-spacing: 1px;
+}
+
+.btn-sesion:hover {
+    background-color: white;
+    color: black;
+}
+
+.acomodar-bloque {
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+    width: 50%;  
+    margin-top: 80px;  
+}
+
+.disney-logo {
+    width: 160px;
+    display: block;
+}
+
+.peliculas {
+    font-size: 42px;
+    font-weight: bold;
+    line-height: 1.2;
+}
+
+.boton-texto {
+    display: flex;
+    gap: 10px;
+    width: 100%;
+}
+
+.boton-texto input {
+    flex: 1;
+    background-color: #31343e;
+    border: none;
+    border-radius: 4px;
+    padding: 15px;
+    color: white;
+    outline: none;
+    font-size: 15px;
+}
+
+.boton-suscribete {
+    background-color: #0072d2;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    padding: 0 30px;
+    font-weight: bold;
+    cursor: pointer;
+    font-size: 15px;
+}
+
+.boton-suscribete:hover {
+    background-color: #0265b8;
+}
+
+.div-ahorra {
+    font-size: 14px;
+    color: #a2a6b0;
+    line-height: 1.4;
+}
+
+.ahorra {
+    color: white;
+}
+
+.iconos {
+    width: 100%;
+    max-width: 650px;
+}
+
+/* --- SECCIÓN 2 --- */
+.div-principal {
+    background: black;
+    width: 100%; 
+    display: flex;
+    justify-content: center;
+    padding: 40px 0;
+}
+
+.principal {
+    width: 100%;
+    max-width: 1100px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 20px;
+}
+
+.disney {
+    font-size: 36px;
+    margin-bottom: 5px;
+}
+
+.producciones p {
+    color: #a2a6b0;
+    font-size: 16px;
+    margin-bottom: 25px;
+}
+
+.divStarWar {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+.divImg {
+    height: 600px;
+    width: 100%;
+    max-width: 600px;
+    display: flex;
+    align-items: center;
+    justify-content: left;
+    background: #333 url('assets/starwars.png') no-repeat center / cover; 
+    padding-bottom: 30px;
+    border-radius: 6px;
+}
+
+.texto-star {
+    font-size: 24px;
+}
+
+/* --- SECCIÓN 3 --- */
+.seccion-tres {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 15px;
+    padding: 10px 0;
+}
+
+.tarjeta-peli {
+    min-width: 140px;
+    text-align: left;
+}
+
+.tarjeta-peli img {
+    width: 100%;
+    border-radius: 6px;
+    object-fit: cover;
+    margin-bottom: 8px;
+}
+
+.tarjeta-peli p {
+    font-size: 13px;
+    color: #a2a6b0;
+}
+
+/* --- SECCIÓN 4 --- */
+.seccion-cuatro {
+    background-color: #040714;
+    padding: 60px 20px;
+    text-align: center;
+}
+
+.contenedor-tabla {
+    width: 100%;
+    max-width: 1100px;
+    margin: 0 auto;
+}
+
+.tabla-planes {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+.tabla-planes th, .tabla-planes td {
+    padding: 20px;
+    border: 1px solid #1c1f2a; 
+    text-align: center;
+    font-size: 15px;
+    font-weight: bold;
+    color: white;
+    background-color: #0b0e17; 
+    vertical-align: middle;
+}
+
+.tabla-planes .col-izquierda, .tabla-planes .feature {
+    background-color: #070911; 
+    text-align: left;
+    font-size: 14px;
+    max-width: 320px;
+    line-height: 1.4;
+}
+
+.tabla-planes .btn-premium {
+    background-color: #0072d2; 
+    border: 1px solid #0072d2;
+    border-radius: 8px;
+    font-size: 14px;
+    letter-spacing: 1px;
+    height: 60px;
+}
+
+.tabla-planes .col-gris {
+    background-color: #1e1f22;
+    border: 1px solid #1c1f2a;
+    font-size: 13px;
+    letter-spacing: 1px;
+}
+
+.btn-gris-izq { border-top-left-radius: 4px; }
+.btn-gris-der { border-top-right-radius: 8px; }
+
+.tabla-planes .check {
+    color: #00ff44;
+    font-size: 22px;
+}
+
+.tabla-planes .cross {
+    color: #ff002b;
+    font-size: 22px;
+}
+
+.tabla-planes .numero {
+    color: #a2a6b0;
+    font-size: 15px;
+}
+
+/* --- SECCIÓN 5 --- */
+.grid-deportes {
+    display: grid;
+    grid-template-columns: repeat(4, 150px);
+    gap: 20px;
+    justify-content: center;
+}
+
+.grid-deportes-2{
+    display: grid;
+    grid-template-columns: repeat(2, 150px);
+    gap: 20px;
+    justify-content: center;
+    padding-top: 20px;
+}
+
+.tarjeta-deporte img {
+    width: 100%;
+    border-radius: 8px;
+    background: #1a1c24;
+}
+
+
+/* --- SECCIÓN 6 --- */
+.img-dispositivos {
+    width: 100%;
+    max-width: 700px;
+    height: auto;
+}
+
+/* --- SECCIÓN 7 --- */
+.pie-pagina-disney {
+    background-color: #040714;
+    padding: 40px 20px;
+    text-align: center;
+    border-top: 1px solid #1a1c24;
+    font-size: 13px;
+    color: #71767b;
+}
+
+@media (max-width: 1000px) {
+    .encabezado {
+        padding: 20px;
+        background: linear-gradient(to bottom, rgba(4,7,20,0.7), rgba(4,7,20,0.95)), url('assets/main-hero-background.png') no-repeat center / cover;
+    }
+
+    .acomodar-bloque {
+        width: 100%;
+        margin-top: 40px;
+        align-items: center;
+        text-align: center;
+    }
+
+    .peliculas {
+        font-size: 30px;
+    }
+
+    .boton-texto {
+        flex-direction: column;
+        width: 100%;
+        max-width: 400px;
+    }
+
+    .boton-suscribete {
+        height: 50px;
+    }
+
+    .principal {
+        align-items: center;
+    }
+
+    .divImg {
+        height: 400px;
+        max-width: 400px;
+    }
+
+    .grid-deportes {
+        grid-template-columns: repeat(2, 140px);
+    }
+
+    .grid-deportes-2 {
+        grid-template-columns: repeat(2, 140px);
+    }
+}

@@ -1,0 +1,304 @@
+/*ESTILOS BASE*/
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+}
+
+body {
+    background-color: #000000;
+    color: #ffffff;
+}
+
+.btn-vero {
+    background: transparent;
+    border: 1px solid rgba(255, 255, 255, 0.6);
+    color: #ffffff;
+    padding: 12px 50px;
+    border-radius: 30px;
+    font-size: 13px;
+    font-weight: 400;
+    letter-spacing: 1px;
+    cursor: pointer;
+}
+
+.btn-vero:hover {
+    background-color: rgba(255, 255, 255, 0.1);
+    border-color: #ffffff;
+}
+/*SECCIÓN 1: PRINCIPAL*/
+.principal {
+    position: relative;
+    width: 100%;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    padding: 25px 50px;
+    background: url('Vero/Social.jpg') center center no-repeat;
+    background-size: cover;
+}
+
+.header-vero {
+    width: 100%;
+    max-width: 1250px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo-header-img {
+    height: 18px; 
+    width: auto;
+}
+
+.nav-vero {
+    display: flex;
+    gap: 28px;
+}
+
+.nav-vero a {
+    color: rgba(255, 255, 255, 0.65);
+    text-decoration: none;
+    font-size: 14px;
+    font-weight: 400;
+}
+
+.nav-vero a:hover, .nav-vero a.activo {
+    color: #ffffff;
+}
+
+.contenido-principal {
+    text-align: center;
+    margin-top: 20px;
+}
+
+.logo-centro {
+    margin-bottom: 25px;
+}
+
+.logo-central-img {
+    max-width: 240px; 
+    height: auto;
+}
+
+.tagline {
+    font-size: 28px;
+    color: #ffffff;
+    font-weight: 300;
+    margin-bottom: 35px;
+    letter-spacing: -0.3px;
+}
+
+.bajada-tiendas {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 12px;
+}
+
+.texto-available {
+    font-size: 12px;
+    color: rgba(255, 255, 255, 0.5);
+}
+
+.iconos-tiendas {
+    display: flex;
+    gap: 25px;
+    align-items: center;
+}
+
+.icono-tienda-img {
+    height: 22px;
+    width: auto;
+    opacity: 0.55;
+    cursor: pointer;
+}
+
+.icono-tienda-img:hover {
+    opacity: 1;
+}
+
+/*SECCIÓN 2: CoFi (Fondo de Concierto)*/
+.seccion-cofi {
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: url('Vero/cofi.jpg') center center no-repeat;
+    background-size: cover;
+}
+
+.capa-oscura {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 1;
+}
+
+.contenido-cofi {
+    position: relative;
+    z-index: 2;
+    text-align: center;
+}
+
+.titulo-cofi {
+    font-size: 72px;
+    font-weight: 400;
+    letter-spacing: 0.5px;
+    line-height: 1;
+}
+
+.subtitulo-cofi {
+    font-size: 13px;
+    color: rgba(255, 255, 255, 0.7);
+    text-transform: none;
+    letter-spacing: 0.5px;
+    margin-top: 8px;
+    margin-bottom: 45px;
+}
+
+.lema-cofi {
+    font-size: 26px;
+    font-weight: 300;
+    margin-bottom: 35px;
+    letter-spacing: -0.2px;
+}
+
+/*SECCIÓN 3: VERO MUSIC*/
+.seccion-music {
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: url('Vero/abi-ocia-banner-cover-vero-music.jpg') center center no-repeat;
+    background-size: cover;
+}
+
+.capa-roja {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+
+.contenido-music {
+    position: relative;
+    z-index: 1;
+    text-align: center;
+    width: 100%;
+    padding: 0 20px;
+}
+
+.logo-vero-music-box {
+    margin-bottom: 35px;
+}
+
+.logo-music-img {
+    max-width: 260px;
+    height: auto;
+}
+
+.lema-music {
+    font-size: 24px;
+    font-weight: 300;
+    margin-bottom: 35px;
+    letter-spacing: 1px;
+}
+
+/*SECCIÓN 4: FOOTER DE LA PÁGINA*/
+.footer-vero-final {
+    background-color: #000000;
+    padding: 90px;
+}
+
+.columnas-footer {
+    display: grid;
+    grid-template-columns: 2fr repeat(4, 1fr);
+    gap: 30px;
+    max-width: 1200px;
+    margin: auto;
+}
+
+.columna-info h3 {
+    font-size: 16px;
+    font-weight: 600;
+    margin-bottom: 22px;
+}
+
+.columna-info p {
+    font-size: 13px;
+    color: #777777;
+    line-height: 2;
+    margin-bottom: 12px;
+}
+
+.link-correo {
+    color: #777777;
+    font-size: 13px;
+    text-decoration: underline;
+}
+
+.columna-links h4 {
+    font-size: 14px;
+    font-weight: 600;
+    color: #ffffff;
+    margin-bottom: 22px;
+}
+
+.columna-links ul {
+    list-style: none;
+}
+
+.columna-links li {
+    margin-bottom: 12px;
+}
+
+.columna-links a {
+    color: #777777;
+    text-decoration: underline;
+    font-size: 13px;
+}
+
+.columna-links a:hover {
+    color: #ffffff;
+}
+
+.copyright-vero {
+    max-width: 1200px;
+    margin: auto;
+    padding-top: 25px;
+    font-size: 11px;
+    color: #333333;
+    text-align: right;
+}
+
+/*RESPONSIVE*/
+@media (max-width: 850px) {
+    .columnas-footer {
+        grid-template-columns: 1fr;
+        gap: 40px;
+    }
+    
+    .header-vero {
+        flex-direction: column;
+        gap: 20px;
+    }
+    
+    .tagline, .lema-cofi, .lema-music {
+        font-size: 20px;
+    }
+    
+    .copyright-vero {
+        text-align: center;
+    }
+}
